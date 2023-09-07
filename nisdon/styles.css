@@ -13,8 +13,8 @@ body {
 
 /* Header styles */
 header {
-    /* Apply a reddish gradient background */
-    background: linear-gradient(to bottom, #FF6B6B, #FF8E8E);
+    /* Apply a reddish-brown gradient background */
+    background: linear-gradient(to bottom, #A52A2A, #FF6347);
     color: #fff;
     text-align: center;
     padding: 2rem 0;
