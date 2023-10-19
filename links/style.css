@@ -15,7 +15,7 @@ main {
     margin: 0;
     padding: 0;
     display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create columns with a minimum width of 200px that fill the available space */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create columns with a minimum width of 300px that fill the available space */
     grid-gap: 20px; /* Add gap between items for spacing */
 }
 
@@ -34,3 +34,10 @@ li {
 }
 
 /* Additional styling, if needed */
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width for smaller screens */
+    }
+}
