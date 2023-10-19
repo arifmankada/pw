@@ -1,6 +1,6 @@
 const videoList = document.getElementById("videoList");
 const filterInput = document.getElementById("filterInput");
-const apiKey = 'YOUR_YOUTUBE_DATA_API_KEY'; // Replace with your YouTube Data API key
+const apiKey = 'AIzaSyBrPxK2PojYKuYZ0bl1IXQnqc39PSSQMV8'; // Replace with your YouTube Data API key
 const videoIds = [
     "J8n_eTGvUvU",
     "kOUoQSnKwSw&t",
