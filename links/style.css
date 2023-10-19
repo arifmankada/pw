@@ -15,10 +15,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 200px; /* Set the row height to 200px */
-    grid-gap: 20px;
 }
 
 ul {
@@ -27,23 +23,12 @@ ul {
 }
 
 li {
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
+    margin: 10px 0; /* Add vertical margin for spacing */
 }
 
 /* Style for the video thumbnail */
 .video-thumbnail {
-    width: 100%;
-    flex: 1; /* Allow the thumbnail to grow and take available vertical space */
+    width: 100%; /* The thumbnail will take up the full width of its container */
 }
 
 /* Additional styling, if needed */
-
-/* Media query for smaller screens (e.g., mobile devices) */
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Adjust to a single column */
-        grid-auto-rows: auto; /* Reset the row height */
-    }
-}
