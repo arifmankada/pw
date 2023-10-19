@@ -21,7 +21,7 @@ const videoIds = [
 
 async function fetchVideoData(videoId) {
     try {
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?key=${apiKey}&part=snippet&id=${videoId}`);
+        const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?key=${AIzaSyBrPxK2PojYKuYZ0bl1IXQnqc39PSSQMV8}&part=snippet&id=${videoId}`);
         if (!response.ok) {
             throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
         }
