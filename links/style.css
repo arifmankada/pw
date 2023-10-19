@@ -12,11 +12,10 @@ header {
 }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create columns with a minimum width of 200px that can fit the available space */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create columns with a minimum width of 200px that fill the available space */
     grid-gap: 20px; /* Add gap between items for spacing */
 }
 
