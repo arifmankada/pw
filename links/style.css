@@ -25,3 +25,11 @@ ul {
 li {
     margin: 10px 0;
 }
+
+/* Style for the video thumbnail */
+.video-thumbnail {
+    width: 100%; /* The thumbnail will take up the full width of its container */
+    max-width: 100%; /* It won't exceed its original size */
+}
+
+/* Additional styling, if needed */
