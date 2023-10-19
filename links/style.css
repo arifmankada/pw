@@ -15,9 +15,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 ul {
@@ -26,20 +23,12 @@ ul {
 }
 
 li {
-    margin: 10px;
-    flex: 0 0 calc(33.33% - 20px); /* Adjust the width for 3 columns with spacing */
+    margin: 10px 0; /* Add vertical margin for spacing */
 }
 
 /* Style for the video thumbnail */
 .video-thumbnail {
-    width: 100%;
+    width: 100%; /* The thumbnail will take up the full width of its container */
 }
 
 /* Additional styling, if needed */
-
-/* Media query for smaller screens (e.g., mobile devices) */
-@media (max-width: 768px) {
-    li {
-        flex: 0 0 calc(50% - 20px); /* Adjust the width for 2 columns with spacing */
-    }
-}
