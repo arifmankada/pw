@@ -1,5 +1,6 @@
 const videoList = document.getElementById("videoList");
 const filterInput = document.getElementById("filterInput");
+const errorDisplay = document.getElementById("errorDisplay");
 const apiKey = 'AIzaSyBrPxK2PojYKuYZ0bl1IXQnqc39PSSQMV8'; // Replace with your YouTube Data API key
 const videoIds = [
     "5uLnYmM-NaI",
@@ -19,7 +20,8 @@ const videoIds = [
 ];
 
 async function populateVideoList() {
-    videoList.innerHTML = "";
+    videoList.innerHTML = ""; // Clear the existing video list
+    errorDisplay.textContent = ""; // Clear any previous error messages
 
     for (const videoId of videoIds) {
         try {
@@ -36,9 +38,13 @@ async function populateVideoList() {
                     </div>
                 `;
                 videoList.appendChild(li);
+            } else {
+                // Handle the case where video data is not found
+                console.error(`Video data not found for ${videoId}`);
             }
         } catch (error) {
             console.error(`Error fetching video data for ${videoId}:`, error);
+            errorDisplay.textContent = "Error: Unable to fetch video data. Please try again later.";
         }
     }
 }
